@@ -1,4 +1,4 @@
-FROM alpine:3.12.0
+FROM arm64v8/alpine:3.12.0
 
 ENV VERSION 0.14.1
 
