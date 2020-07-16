@@ -11,7 +11,7 @@ RUN set -xe && \
     tar -xzf ts-dns_${VERSION}_Linux_arm64.tar.gz && \
     cp /srv/ts-dns /usr/bin && \
     apk del curl && \
-    rm -rf *
+    rm -rf /srv/*
 
 VOLUME [ "/config" ]
 
