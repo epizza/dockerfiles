@@ -9,9 +9,8 @@ RUN set -xe && \
     apk add --no-cache curl ca-certificates && \
     curl -fsSLO "https://github.com/wolf-joe/ts-dns/releases/download/v${VERSION}/ts-dns_${VERSION}_Linux_arm64.tar.gz" && \
     tar -xzf ts-dns_${VERSION}_Linux_arm64.tar.gz && \
-    cp /srv/ts-dns /usr/bin && \
-    apk del curl && \
-    rm -rf /srv/*
+    cp ts-dns /usr/bin && \
+    apk del curl
 
 VOLUME [ "/config" ]
 
